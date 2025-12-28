@@ -90,7 +90,9 @@ class QAModel:
             # Filter by threshold and format results
             valid_answers = []
             for ans in result:
-                if ans['score'] >= threshold:
+                # Filter out empty or very short answers (likely false positives)
+                answer_text = ans['answer'].strip()
+                if ans['score'] >= threshold and len(answer_text) > 0:
                     valid_answers.append({
                         'answer': ans['answer'],
                         'score': float(ans['score']),

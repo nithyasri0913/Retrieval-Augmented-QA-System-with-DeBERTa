@@ -62,7 +62,7 @@ def main():
         retriever_model='all-MiniLM-L6-v2',  # Fast and efficient
         qa_model='deepset/deberta-v3-base-squad2',  # Accurate QA model
         top_k=3,  # Retrieve top 3 passages
-        qa_threshold=0.3,  # Minimum confidence threshold
+        qa_threshold=0.0,  # No threshold - accept all answers
         chunk_size=512,  # Chunk size in words
         chunk_overlap=50  # Overlap between chunks
     )

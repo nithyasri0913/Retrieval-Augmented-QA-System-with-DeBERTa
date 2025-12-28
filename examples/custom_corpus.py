@@ -45,26 +45,9 @@ def main():
     # Option 1: Use sample documents
     print("Creating sample corpus...")
     documents = [
-        """
-        Python is a high-level, interpreted programming language created by Guido van Rossum
-        and first released in 1991. Python's design philosophy emphasizes code readability
-        with significant use of whitespace. It supports multiple programming paradigms
-        including procedural, object-oriented, and functional programming.
-        """,
-        """
-        Machine learning is a subset of artificial intelligence that provides systems the
-        ability to automatically learn and improve from experience without being explicitly
-        programmed. It focuses on the development of computer programs that can access data
-        and use it to learn for themselves. The primary aim is to allow computers to learn
-        automatically without human intervention.
-        """,
-        """
-        Natural Language Processing (NLP) is a branch of artificial intelligence that helps
-        computers understand, interpret and manipulate human language. NLP draws from many
-        disciplines including computer science and computational linguistics. Modern NLP
-        algorithms are based on machine learning, especially statistical machine learning
-        and deep learning models.
-        """
+        "Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991. Python's design philosophy emphasizes code readability with significant use of whitespace. It supports multiple programming paradigms including procedural, object-oriented, and functional programming.",
+        "Machine learning is a subset of artificial intelligence that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. It focuses on the development of computer programs that can access data and use it to learn for themselves. The primary aim is to allow computers to learn automatically without human intervention.",
+        "Natural Language Processing (NLP) is a branch of artificial intelligence that helps computers understand, interpret and manipulate human language. NLP draws from many disciplines including computer science and computational linguistics. Modern NLP algorithms are based on machine learning, especially statistical machine learning and deep learning models."
     ]
 
     metadata = [
@@ -82,7 +65,7 @@ def main():
         retriever_model='all-MiniLM-L6-v2',
         qa_model='deepset/deberta-v3-base-squad2',
         top_k=5,
-        qa_threshold=0.2,
+        qa_threshold=0.0,  # Accept all answers (no threshold)
         chunk_size=512,
         chunk_overlap=50
     )

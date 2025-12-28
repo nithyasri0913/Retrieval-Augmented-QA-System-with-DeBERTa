@@ -123,6 +123,15 @@ cd examples
 python squad_evaluation.py
 ```
 
+## Important files:
+
+- run_interactive.py - Main interactive script
+- examples/custom_corpus.py - Alternative interactive script
+- examples/basic_usage.py - Full demo
+- examples/squad_evaluation.py - Benchmark
+- test_system.py - System verification
+
+
 ## Advanced Configuration
 
 ### Model Selection

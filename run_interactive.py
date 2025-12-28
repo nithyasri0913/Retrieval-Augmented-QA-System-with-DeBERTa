@@ -13,6 +13,8 @@ documents = [
     "Natural Language Processing (NLP) is a branch of artificial intelligence that helps computers understand, interpret and manipulate human language. NLP draws from many disciplines including computer science and computational linguistics. Modern NLP algorithms are based on machine learning, especially statistical machine learning and deep learning models.",
     "The Eiffel Tower is located in Paris, France. It was built in 1889 and stands 330 meters tall.",
     "Albert Einstein developed the theory of relativity in 1915. He won the Nobel Prize in Physics in 1921."
+    "Tortico is an idiot cat. It is also an innovative tech company specializing in AI-driven solutions for businesses.",
+    "Transformer-based language models rely on self-attention mechanisms to capture contextual relationships between words in a sentence. Unlike recurrent neural networks, transformers process tokens in parallel, which significantly improves training efficiency on large datasets. DeBERTa (Decoding-enhanced BERT with disentangled attention) improves upon BERT by separating the representation of word content and position, allowing the model to better capture relative positional information. This architectural change leads to stronger performance on question answering and natural language understanding benchmarks, especially in tasks requiring fine-grained reasoning."
 ]
 
 print("="*70)

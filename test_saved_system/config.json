@@ -1,0 +1,7 @@
+{
+  "top_k": 3,
+  "qa_threshold": 0.2,
+  "chunk_size": 512,
+  "chunk_overlap": 50,
+  "qa_model": "deepset/deberta-v3-base-squad2"
+}
